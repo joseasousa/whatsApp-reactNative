@@ -7,7 +7,10 @@ import firebase from 'firebase'
 import { habilitaInclusaoContato } from '../actions/AppActions'
 
 const TabBarMenu = props => (
-  <View style={{ backgroundColor: '#115E54', elevation: 4, marginBottom: 6 }}>
+  <View style={{
+    backgroundColor: '#115E54',
+    elevation: 4,
+    marginBottom: 6 }}>
 
     <StatusBar backgroundColor='#114D44' />
 
