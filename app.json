@@ -1,5 +1,9 @@
 {
   "expo": {
+    "name": "Mensagens",
+    "icon": "./icon/chat.png",
+    "version": "1.0.0",
+    "slug": "mensagens",
     "sdkVersion": "22.0.0"
   }
 }

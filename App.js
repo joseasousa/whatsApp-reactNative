@@ -3,19 +3,8 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import firebase from 'firebase'
 import reducers from './src/reducers'
-import { StackNavigator } from 'react-navigation'
-import FormLogin from './src/components/FormLogin'
-import FormCadastro from './src/components/FormCadastro'
 import ReduxThunk from 'redux-thunk'
-
-const Routes = StackNavigator({
-  Login: {
-    screen: FormLogin
-  },
-  Cadastro: {
-    screen: FormCadastro
-  }
-})
+import Routes from './src/Routes'
 
 const store = createStore(
   reducers,
