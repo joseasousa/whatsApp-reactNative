@@ -7,7 +7,7 @@ export default props => (
     <View style={{ flex: 1, padding: 15 }}>
       <View style={{ flex: 2, justifyContent: 'center', alignItems: 'center' }}>
         <Text style={{ fontSize: 20, color: '#ffffff' }}>Seja Bem-Vindo</Text>
-        <Image source={require('../imgs/chat.png')} />
+        <Image source={require('../imgs/logo.png')} />
       </View>
       <View style={{ flex: 1 }}>
         <Button title='Fazer Login' onPress={() => Actions.formLogin()} />
