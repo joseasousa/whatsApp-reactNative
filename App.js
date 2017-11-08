@@ -21,6 +21,9 @@ export default class App extends Component {
       storageBucket: 'react-a7412.appspot.com',
       messagingSenderId: '527913862234'
     }
+    console.ignoredYellowBox = [
+      'Setting a timer'
+    ]
     firebase.initializeApp(config)
   }
 

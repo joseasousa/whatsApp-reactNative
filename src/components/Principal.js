@@ -31,7 +31,7 @@ export default class Principal extends Component {
         navigationState={this.state}
         renderScene={this._renderScene}
         renderHeader={this._renderHeader}
-        onRequestChangeTab={this._handleChangeTab}
+        onIndexChange={this._handleChangeTab}
       />
     );
   }
