@@ -24,8 +24,8 @@ class Conversas extends Component {
   renderRow (conversa) {
     return (
       <TouchableHighlight onPress={
-                () => Actions.conversa({ title: conversa.nome, contatoNome: conversa.nome, contatoEmail: conversa.email })
-            }>
+        () => Actions.conversa({ title: conversa.nome, contatoNome: conversa.nome, contatoEmail: conversa.email })
+      }>
         <View style={{ flex: 1, padding: 20, borderBottomWidth: 1, borderColor: '#ccc' }}>
           <Text style={{ fontSize: 25 }}>{conversa.nome}</Text>
         </View>
@@ -39,7 +39,7 @@ class Conversas extends Component {
         enableEmptySections
         dataSource={this.dataSource}
         renderRow={this.renderRow}
-            />
+      />
     )
   }
 }

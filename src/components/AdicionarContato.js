@@ -15,7 +15,7 @@ class AdicionarContato extends Component {
               style={{ fontSize: 20, height: 45 }}
               onChangeText={(texto) => this.props.modificaAdicionaContatoEmail(texto)}
               value={this.props.adiciona_contato_email}
-                        />
+            />
           </View>
 
           <View style={{ flex: 1 }}>
@@ -23,7 +23,7 @@ class AdicionarContato extends Component {
               title='Adicionar'
               color='#115E54'
               onPress={() => this.props.adicionaContato(this.props.adiciona_contato_email)}
-                        />
+            />
             <Text style={{ color: '#ff0000', fontSize: 20 }}>
               {this.props.cadastro_resultado_txt_erro}
             </Text>
@@ -35,7 +35,7 @@ class AdicionarContato extends Component {
         <View>
           <Text style={{ fontSize: 20 }}>
                         Cadastro realizado com sucesso!
-                    </Text>
+          </Text>
         </View>
       )
     }

@@ -29,13 +29,13 @@ class formLogin extends Component {
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <Text style={{ fontSize: 25, color: '#fff' }}>WhatsApp Clone</Text>
           </View>
-          <View style={{ flex: 2}}>
+          <View style={{ flex: 2 }}>
             <TextInput
               value={this.props.email}
               style={{ fontSize: 20, height: 45 }}
               placeholder='E-mail' placeholderTextColor='#fff'
               onChangeText={texto => this.props.modificaEmail(texto)}
-                        />
+            />
             <TextInput
               secureTextEntry
               value={this.props.senha}
@@ -43,7 +43,7 @@ class formLogin extends Component {
               placeholder='Senha'
               placeholderTextColor='#fff'
               onChangeText={texto => this.props.modificaSenha(texto)}
-                        />
+            />
             <Text style={{ color: '#ff0000', fontSize: 18 }}>
               {this.props.erroLogin}
             </Text>
@@ -51,7 +51,7 @@ class formLogin extends Component {
               <Text style={{ fontSize: 20, color: '#fff' }}>Ainda não tem cadastro? Cadastre-se</Text>
             </TouchableHighlight>
           </View>
-          <View style={{ flex: 2}}>
+          <View style={{ flex: 2 }}>
             {this.renderBtnAcessar()}
           </View>
         </View>

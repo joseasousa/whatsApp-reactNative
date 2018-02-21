@@ -53,15 +53,15 @@ class Conversa extends Component {
             enableEmptySections
             dataSource={this.dataSource}
             renderRow={this.renderRow}
-                    />
+          />
         </View>
 
-        <View style={{ flexDirection: 'row', height: 60}}>
+        <View style={{ flexDirection: 'row', height: 60 }}>
           <TextInput
             value={this.props.mensagem}
             onChangeText={texto => this.props.modificaMensagem(texto)}
             style={{ flex: 4, backgroundColor: '#fff', fontSize: 18 }}
-                    />
+          />
 
           <TouchableHighlight onPress={this._enviarMensagem.bind(this)} underlayColor='#fff'>
             <Image source={require('../imgs/enviar_mensagem.png')} />

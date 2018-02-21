@@ -24,14 +24,14 @@ const TabBarMenu = props => (
           <TouchableHighlight
             onPress={() => { Actions.adicionarContato(); props.habilitaInclusaoContato() }}
             underlayColor='#114D44'
-                    >
+          >
             <Image source={require('../imgs/adicionar_contato.png')} />
           </TouchableHighlight>
         </View>
         <View style={{ justifyContent: 'center' }}>
           <TouchableHighlight onPress={
-                        () => firebase.auth().signOut().then(() => Actions.formLogin())
-                    }>
+            () => firebase.auth().signOut().then(() => Actions.formLogin())
+          }>
             <Text style={{ fontSize: 20, color: '#fff' }}>Sair</Text>
           </TouchableHighlight>
         </View>
